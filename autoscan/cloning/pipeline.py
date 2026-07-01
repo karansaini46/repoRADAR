@@ -91,6 +91,9 @@ async def run_cloning(company_id: int = None, limit: int = 20):
     print(f"Repositories processed: {processed} / {len(repos_to_clone)}")
     print(f"-----------------------\n")
 
+def run_cloning_sync(*args, **kwargs):
+    """Synchronous wrapper for RQ worker execution."""
+    asyncio.run(run_cloning(*args, **kwargs))
 
 def main():
     parser = argparse.ArgumentParser(description="AutoScan Cloning & Inventory Engine")
