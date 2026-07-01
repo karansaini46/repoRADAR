@@ -15,6 +15,8 @@ from autoscan.reports.pipeline import run_report_generation
 from autoscan.outreach.pipeline_contacts import run_contact_discovery
 from autoscan.outreach.pipeline_email import run_outreach
 
+from autoscan.shared.settings import get_settings
+
 logger = logging.getLogger(__name__)
 
 async def run_sync_in_thread(func, *args, **kwargs):
@@ -23,6 +25,11 @@ async def run_sync_in_thread(func, *args, **kwargs):
 
 async def wrapped_job(job_name: str, func, is_async: bool = False, *args, **kwargs):
     """Wrapper to measure execution time and handle logging/errors for jobs."""
+    settings = get_settings()
+    if not settings.auto_mode:
+        logger.info(f"--- Skipping scheduled job {job_name} (Auto Mode is disabled) ---")
+        return
+
     logger.info(f"--- Starting scheduled job: {job_name} ---")
     start_time = time.time()
     try:
