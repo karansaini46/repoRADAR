@@ -146,6 +146,59 @@ def dashboard_overview(db: Session = Depends(get_db)):
 
 
 # ---------------------------------------------------------------------------
+# GET /api/dashboard/vulnerable-companies
+# ---------------------------------------------------------------------------
+
+
+@router.get("/vulnerable-companies")
+def vulnerable_companies(db: Session = Depends(get_db)):
+    """
+    Returns companies that have at least one real finding (is_false_positive=False),
+    with counts by severity. Used by the dashboard overview.
+    """
+    # Subquery: count real findings per repo
+    results = (
+        db.query(
+            Company.id,
+            Company.name,
+            Company.github_org,
+            Company.status,
+            func.count(Finding.id).label("finding_count"),
+        )
+        .join(Repository, Repository.company_id == Company.id)
+        .join(Finding, Finding.repository_id == Repository.id)
+        .filter(Finding.is_false_positive == False)
+        .group_by(Company.id)
+        .order_by(func.count(Finding.id).desc())
+        .all()
+    )
+
+    companies = []
+    for row in results:
+        # Get severity breakdown for this company
+        sevs = (
+            db.query(Finding.severity, func.count(Finding.id))
+            .join(Repository, Repository.id == Finding.repository_id)
+            .filter(Repository.company_id == row.id)
+            .filter(Finding.is_false_positive == False)
+            .group_by(Finding.severity)
+            .all()
+        )
+        severity_breakdown = {s: c for s, c in sevs}
+
+        companies.append({
+            "id": row.id,
+            "name": row.name or row.github_org,
+            "github_org": row.github_org,
+            "status": row.status or "NEW",
+            "finding_count": row.finding_count,
+            "severity_breakdown": severity_breakdown,
+        })
+
+    return {"companies": companies}
+
+
+# ---------------------------------------------------------------------------
 # GET /api/dashboard/funnel
 # ---------------------------------------------------------------------------
 
@@ -227,3 +280,56 @@ def dashboard_funnel(db: Session = Depends(get_db)):
             {"stage": "Paid", "count": paid},
         ]
     }
+
+# ---------------------------------------------------------------------------
+# GET /api/dashboard/verified-findings
+# ---------------------------------------------------------------------------
+
+
+@router.get("/verified-findings")
+def verified_findings(db: Session = Depends(get_db)):
+    """
+    Returns all findings that have been verified by AI (verified=True).
+    Includes associated repository and company data.
+    """
+    results = (
+        db.query(
+            Finding, 
+            Repository.name.label("repo_name"), 
+            Repository.full_name.label("repo_full_name"), 
+            Company.id.label("company_id"), 
+            Company.name.label("company_name"), 
+            Company.github_org.label("company_github_org")
+        )
+        .join(Repository, Finding.repository_id == Repository.id)
+        .join(Company, Repository.company_id == Company.id)
+        .filter(Finding.verified == True)
+        .filter(Finding.is_false_positive == False)
+        .order_by(Finding.created_at.desc())
+        .all()
+    )
+
+    findings = []
+    for row in results:
+        finding = row.Finding
+        findings.append({
+            "id": finding.id,
+            "type": finding.type,
+            "severity": finding.severity,
+            "title": finding.title,
+            "description": finding.description,
+            "file_path": finding.file_path,
+            "line_no": finding.line_no,
+            "scanner_name": finding.scanner_name,
+            "verified": finding.verified,
+            "is_false_positive": finding.is_false_positive,
+            "ai_explanation": finding.ai_explanation,
+            "ai_recommendation": finding.ai_recommendation,
+            "created_at": finding.created_at.isoformat() if finding.created_at else None,
+            "repo_name": row.repo_name,
+            "repo_full_name": row.repo_full_name,
+            "company_id": row.company_id,
+            "company_name": row.company_name or row.company_github_org,
+        })
+
+    return {"findings": findings}

@@ -184,6 +184,7 @@ def get_company(company_id: int, db: Session = Depends(get_db)):
 
     # Findings (across all repos)
     repo_ids = [r.id for r in repos]
+    repo_fullname_map = {r.id: r.full_name for r in repos}
     findings = []
     if repo_ids:
         db_findings = (
@@ -206,6 +207,7 @@ def get_company(company_id: int, db: Session = Depends(get_db)):
                 "verified": f.verified,
                 "ai_explanation": f.ai_explanation,
                 "ai_recommendation": f.ai_recommendation,
+                "repo_full_name": repo_fullname_map.get(f.repository_id),
                 "created_at": f.created_at.isoformat() if f.created_at else None,
             }
             for f in db_findings
