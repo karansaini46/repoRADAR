@@ -51,14 +51,14 @@ async def test_extract_json_from_response(dummy_finding):
         verifier._extract_json_from_response("This is just some text without valid JSON.")
 
 @pytest.mark.asyncio
-@patch("autoscan.ai_layer.verifier.anthropic.AsyncAnthropic")
-async def test_verify_finding(mock_anthropic_class, dummy_finding):
+@patch("autoscan.ai_layer.verifier.genai.Client")
+async def test_verify_finding(mock_genai_client_class, dummy_finding):
     # Setup mock
     mock_client = AsyncMock()
     mock_message = MagicMock()
-    mock_message.content = [MagicMock(text='{"is_real_issue": true, "estimated_fix_hours": 5}')]
-    mock_client.messages.create.return_value = mock_message
-    mock_anthropic_class.return_value = mock_client
+    mock_message.text = '{"is_real_issue": true, "estimated_fix_hours": 5}'
+    mock_client.aio.models.generate_content.return_value = mock_message
+    mock_genai_client_class.return_value = mock_client
 
     verifier = FindingVerifier(api_key="dummy")
     
@@ -68,26 +68,26 @@ async def test_verify_finding(mock_anthropic_class, dummy_finding):
         assert result["estimated_fix_hours"] == 5
 
 @pytest.mark.asyncio
-@patch("autoscan.ai_layer.verifier.anthropic.AsyncAnthropic")
-async def test_verify_batch_rate_limiting(mock_anthropic_class, dummy_finding):
+@patch("autoscan.ai_layer.verifier.genai.Client")
+async def test_verify_batch_rate_limiting(mock_genai_client_class, dummy_finding):
     mock_client = AsyncMock()
     mock_message = MagicMock()
-    mock_message.content = [MagicMock(text='{"is_real_issue": true, "estimated_fix_hours": 1}')]
+    mock_message.text = '{"is_real_issue": true, "estimated_fix_hours": 1}'
     # Add a slight delay to simulate API call
-    async def mock_create(*args, **kwargs):
+    async def mock_generate(*args, **kwargs):
         await asyncio.sleep(0.01)
         return mock_message
         
-    mock_client.messages.create = mock_create
-    mock_anthropic_class.return_value = mock_client
+    mock_client.aio.models.generate_content = mock_generate
+    mock_genai_client_class.return_value = mock_client
 
     verifier = FindingVerifier(api_key="dummy")
     
-    findings = [dummy_finding] * 15 # 15 findings, semaphore limit is 10
+    findings = [dummy_finding] * 10 # 10 findings, semaphore limit is 5
     
     with patch.object(verifier, 'get_code_context', return_value="some context"):
         results = await verifier.verify_batch(findings, Path("/dummy"))
         
-    assert len(results) == 15
+    assert len(results) == 10
     for r in results:
         assert r["is_real_issue"] is True
