@@ -37,7 +37,7 @@ services:
       dockerfile: Dockerfile
     container_name: autoscan_api
     restart: always
-    command: uvicorn autoscan.api.main:app --host 0.0.0.0 --port 8000
+    command: sh -c "mkdir -p /app/autoscan/logs && uvicorn autoscan.api.main:app --host 0.0.0.0 --port 8000 2>&1 | tee /app/autoscan/logs/api.log"
     depends_on:
       postgres:
         condition: service_healthy
@@ -61,7 +61,7 @@ services:
       dockerfile: Dockerfile
     container_name: autoscan_scheduler
     restart: always
-    command: python -m autoscan.orchestration.scheduler
+    command: sh -c "mkdir -p /app/autoscan/logs && python -u -m autoscan.orchestration.scheduler 2>&1 | tee /app/autoscan/logs/scheduler.log"
     depends_on:
       postgres:
         condition: service_healthy
@@ -78,7 +78,7 @@ services:
       dockerfile: Dockerfile
     container_name: autoscan_worker
     restart: always
-    command: rq worker discovery enrichment cloning scanning verification impact reporting contacts outreach followup --url redis://redis:6379/0
+    command: sh -c "mkdir -p /app/autoscan/logs && rq worker discovery enrichment cloning scanning verification impact reporting contacts outreach followup --url redis://redis:6379/0 2>&1 | tee /app/autoscan/logs/worker.log"
     depends_on:
       postgres:
         condition: service_healthy
