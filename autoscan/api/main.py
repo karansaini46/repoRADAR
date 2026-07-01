@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # Import existing routers
 from autoscan.api.routes.dashboard import router as dashboard_router
 from autoscan.api.routes.companies import router as companies_router
+from autoscan.api.routes.system import router as system_router
 
 # Import orchestration routers
 from autoscan.orchestration.health import router as health_router
@@ -26,6 +27,7 @@ app.add_middleware(
 # Mount routers
 app.include_router(dashboard_router)
 app.include_router(companies_router)
+app.include_router(system_router)
 app.include_router(health_router)
 
 @app.get("/")
