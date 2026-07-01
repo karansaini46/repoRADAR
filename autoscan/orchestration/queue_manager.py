@@ -56,7 +56,9 @@ class QueueManager:
             return None
             
         try:
-            job = self.queues[queue_name].enqueue(func, *args, **kwargs)
+            # Set a high job_timeout (e.g. 1 hour = 3600s) so batch AI processing 
+            # and large repo cloning jobs don't hit the default 180s RQ timeout.
+            job = self.queues[queue_name].enqueue(func, *args, job_timeout=3600, **kwargs)
             logger.info(f"Enqueued job {job.id} to queue '{queue_name}'")
             return job.id
         except Exception as e:
