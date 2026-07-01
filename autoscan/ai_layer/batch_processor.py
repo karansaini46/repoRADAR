@@ -11,12 +11,17 @@ from autoscan.ai_layer.verifier import FindingVerifier
 logger = logging.getLogger(__name__)
 
 async def process_repo_findings(repo_id: int) -> List[dict]:
-    api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not api_key:
-        logger.error("ANTHROPIC_API_KEY environment variable not set.")
+    api_keys_str = os.getenv("GEMINI_API_KEYS", os.getenv("GEMINI_API_KEY", ""))
+    api_keys = [k.strip() for k in api_keys_str.split(",") if k.strip()]
+    
+    if not api_keys:
+        logger.error("No Gemini API keys found. Set GEMINI_API_KEYS or GEMINI_API_KEY.")
         return []
         
-    verifier = FindingVerifier(api_key=api_key, model='claude-3-5-sonnet-20240620')
+    verifier = FindingVerifier(api_keys=api_keys, model='gemini-2.5-flash')
+    
+    # User requested 15 calls per API key
+    batch_limit = 15 * len(api_keys)
     
     with SessionLocal() as db:
         repo = db.query(Repository).filter(Repository.id == repo_id).first()
@@ -32,7 +37,7 @@ async def process_repo_findings(repo_id: int) -> List[dict]:
         unverified_db_findings = db.query(DBFinding).filter(
             DBFinding.repository_id == repo_id,
             DBFinding.verified == False
-        ).all()
+        ).limit(batch_limit).all()
         
         if not unverified_db_findings:
             logger.info(f"No unverified findings for repo {repo.name}.")
