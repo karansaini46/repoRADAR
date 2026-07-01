@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import {
   BarChart,
   Bar,
@@ -36,6 +37,15 @@ interface OverviewData {
 interface FunnelStage {
   stage: string;
   count: number;
+}
+
+interface VulnCompany {
+  id: number;
+  name: string;
+  github_org: string;
+  status: string;
+  finding_count: number;
+  severity_breakdown: Record<string, number>;
 }
 
 /* ------------------------------------------------------------------ */
@@ -95,16 +105,25 @@ function ChartTooltip({ active, payload, label }: { active?: boolean; payload?: 
 export default function DashboardPage() {
   const [overview, setOverview] = useState<OverviewData | null>(null);
   const [funnel, setFunnel] = useState<FunnelStage[]>([]);
+  const [vulnCompanies, setVulnCompanies] = useState<VulnCompany[]>([]);
   const [loading, setLoading] = useState(true);
+  
+  const [settings, setSettings] = useState<{auto_mode: boolean, scraping_interval_hours: number} | null>(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isStarting, setIsStarting] = useState(false);
 
   useEffect(() => {
     Promise.all([
       fetch(`${API}/api/dashboard/overview`).then((r) => r.ok ? r.json() : null),
       fetch(`${API}/api/dashboard/funnel`).then((r) => r.ok ? r.json() : null),
+      fetch(`${API}/api/system/settings`).then((r) => r.ok ? r.json() : null),
+      fetch(`${API}/api/dashboard/vulnerable-companies`).then((r) => r.ok ? r.json() : null),
     ])
-      .then(([ov, fn]) => {
+      .then(([ov, fn, st, vc]) => {
         setOverview(ov);
         setFunnel(fn?.funnel || []);
+        if (st) setSettings(st);
+        setVulnCompanies(vc?.companies || []);
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -128,6 +147,44 @@ export default function DashboardPage() {
 
   const rev = overview?.revenue_total_cents || 0;
   const maxFunnel = Math.max(...funnel.map((f) => f.count), 1);
+
+  const handleToggleAuto = async () => {
+    if (!settings) return;
+    const newSettings = { ...settings, auto_mode: !settings.auto_mode };
+    setSettings(newSettings);
+    setIsSaving(true);
+    await fetch(`${API}/api/system/settings`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newSettings),
+    });
+    setIsSaving(false);
+  };
+
+  const handleChangeInterval = async (val: string) => {
+    if (!settings) return;
+    const newSettings = { ...settings, scraping_interval_hours: parseInt(val) };
+    setSettings(newSettings);
+    setIsSaving(true);
+    await fetch(`${API}/api/system/settings`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newSettings),
+    });
+    setIsSaving(false);
+  };
+
+  const handleManualStart = async () => {
+    setIsStarting(true);
+    try {
+      const res = await fetch(`${API}/api/system/manual-start`, { method: "POST" });
+      if (res.ok) alert("Discovery engine started manually.");
+      else alert("Failed to start engine.");
+    } catch (e) {
+      alert("Error starting engine.");
+    }
+    setIsStarting(false);
+  };
 
   return (
     <div className="space-y-8 animate-fade-in-up">
@@ -183,14 +240,18 @@ export default function DashboardPage() {
         <div className="space-y-3">
           {funnel.map((stage, i) => {
             const pct = maxFunnel > 0 ? (stage.count / maxFunnel) * 100 : 0;
-            return (
-              <div key={stage.stage} className="flex items-center gap-4">
-                <span className="text-xs text-neutral-400 w-24 text-right font-medium shrink-0">
+            const content = (
+              <div className="flex items-center gap-4 w-full">
+                <span className={`text-xs w-24 text-right font-medium shrink-0 transition-colors ${
+                  stage.stage === "Verified" ? "text-indigo-400 group-hover:text-indigo-300" : "text-neutral-400"
+                }`}>
                   {stage.stage}
                 </span>
                 <div className="flex-1 h-8 bg-white/5 rounded-lg overflow-hidden relative">
                   <div
-                    className="h-full rounded-lg transition-all duration-700 ease-out flex items-center px-3"
+                    className={`h-full rounded-lg transition-all duration-700 ease-out flex items-center px-3 ${
+                      stage.stage === "Verified" ? "brightness-110 group-hover:brightness-125 cursor-pointer" : ""
+                    }`}
                     style={{
                       width: `${Math.max(pct, 2)}%`,
                       backgroundColor: FUNNEL_COLORS[i] || FUNNEL_COLORS[0],
@@ -204,9 +265,149 @@ export default function DashboardPage() {
                 </div>
               </div>
             );
+
+            if (stage.stage === "Verified") {
+              return (
+                <Link key={stage.stage} href="/dashboard/verified" className="block group">
+                  {content}
+                </Link>
+              );
+            }
+
+            return (
+              <div key={stage.stage} className="block">
+                {content}
+              </div>
+            );
           })}
         </div>
       </div>
+
+      {/* System Controls */}
+      <div className="glass rounded-xl p-6">
+        <h2 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-5">Scraping & Automation Engine</h2>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          
+          <div className="flex items-center justify-between sm:justify-start gap-4">
+            <div>
+              <p className="text-sm font-semibold text-neutral-200">Auto Mode</p>
+              <p className="text-xs text-neutral-500">Run pipelines on schedule</p>
+            </div>
+            <button
+              onClick={handleToggleAuto}
+              disabled={isSaving}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                settings?.auto_mode ? "bg-emerald-500" : "bg-neutral-600"
+              }`}
+            >
+              <span
+                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  settings?.auto_mode ? "translate-x-6" : "translate-x-1"
+                }`}
+              />
+            </button>
+          </div>
+
+          <div className="h-px sm:h-10 w-full sm:w-px bg-white/10" />
+          
+          <div className="flex items-center justify-between sm:justify-start gap-4">
+            <div>
+              <p className="text-sm font-semibold text-neutral-200">Scraping Schedule</p>
+              <p className="text-xs text-neutral-500">Interval for discovery</p>
+            </div>
+            <select
+              value={settings?.scraping_interval_hours || 24}
+              onChange={(e) => handleChangeInterval(e.target.value)}
+              disabled={isSaving}
+              className="bg-neutral-900 border border-white/10 rounded-lg text-sm px-3 py-1.5 text-neutral-200 focus:outline-none focus:border-emerald-500"
+            >
+              <option value="6">Every 6 Hours</option>
+              <option value="12">Every 12 Hours</option>
+              <option value="24">Every 24 Hours</option>
+              <option value="48">Every 48 Hours</option>
+            </select>
+          </div>
+
+          <div className="flex-1" />
+
+          <button
+            onClick={handleManualStart}
+            disabled={isStarting}
+            className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold py-2 px-5 rounded-lg transition-colors flex items-center justify-center gap-2"
+          >
+            {isStarting ? (
+              <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+            ) : (
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            )}
+            Start Manual Scrape
+          </button>
+        </div>
+      </div>
+
+      {/* Vulnerable Companies */}
+      {vulnCompanies.length > 0 && (
+        <div className="glass rounded-xl p-6">
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-sm font-medium text-neutral-500 uppercase tracking-wider">Companies with Vulnerabilities</h2>
+            <span className="text-xs text-red-400 font-medium bg-red-500/10 px-2.5 py-1 rounded-md border border-red-500/20">
+              {vulnCompanies.reduce((sum, c) => sum + c.finding_count, 0)} total findings
+            </span>
+          </div>
+          <div className="space-y-2">
+            {vulnCompanies.map((vc) => (
+              <Link
+                key={vc.id}
+                href={`/dashboard/companies/${vc.id}`}
+                className="flex items-center justify-between p-4 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] border border-white/5 hover:border-indigo-500/30 transition-all group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center text-red-400 shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-neutral-200 group-hover:text-white transition-colors">{vc.name}</p>
+                    <p className="text-[11px] text-neutral-600 font-mono">{vc.github_org}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap gap-1.5">
+                    {vc.severity_breakdown.CRITICAL && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-red-500/15 text-red-400 border border-red-500/25">
+                        {vc.severity_breakdown.CRITICAL} Critical
+                      </span>
+                    )}
+                    {vc.severity_breakdown.HIGH && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-orange-500/15 text-orange-400 border border-orange-500/25">
+                        {vc.severity_breakdown.HIGH} High
+                      </span>
+                    )}
+                    {vc.severity_breakdown.MEDIUM && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-yellow-500/15 text-yellow-400 border border-yellow-500/25">
+                        {vc.severity_breakdown.MEDIUM} Medium
+                      </span>
+                    )}
+                    {vc.severity_breakdown.LOW && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-neutral-500/15 text-neutral-400 border border-neutral-500/25">
+                        {vc.severity_breakdown.LOW} Low
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-lg font-bold text-neutral-200 font-mono min-w-[3rem] text-right">{vc.finding_count}</span>
+                  <svg className="w-4 h-4 text-neutral-600 group-hover:text-indigo-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Bottom Grid: Top Findings + Activity Feed */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
