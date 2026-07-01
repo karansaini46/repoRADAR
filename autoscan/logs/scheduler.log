@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/app/autoscan/orchestration/scheduler.py", line 9, in <module>
+    from autoscan.enrichment.pipeline import run_enrichment
+  File "/app/autoscan/enrichment/pipeline.py", line 16, in <module>
+    from autoscan.enrichment.tech_stack import detect_tech_stack
+  File "/app/autoscan/enrichment/tech_stack.py", line 2, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'

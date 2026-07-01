@@ -32,7 +32,8 @@ async def _run_scanning_async(company_id=None, limit=10):
     orchestrator = ScanOrchestrator(scanners)
     
     with SessionLocal() as db:
-        query = select(Repository).where(Repository.status == 'cloned')
+        # Statuses in the database are stored in uppercase (e.g. 'NEW', 'CLONED', 'SCANNED')
+        query = select(Repository).where(Repository.status == 'CLONED')
         if company_id:
             query = query.where(Repository.company_id == company_id)
         query = query.limit(limit)

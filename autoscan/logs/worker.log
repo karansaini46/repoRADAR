@@ -1,0 +1,644 @@
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: started with PID 8, version 2.10.0
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: subscribing to channel rq:pubsub:d2577848ffd6489f95cca410df4dcd3d
+01:31:44 *** Listening on discovery, enrichment, cloning, scanning, verification, impact, reporting, contacts, outreach, followup...
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+01:31:44 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+04:35:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+04:49:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+05:02:38 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+05:16:08 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+05:35:36 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+05:36:24 discovery: autoscan.discovery.pipeline.run_discovery_sync() (330f8037-dee5-4ed2-8cfa-35c74730a7ef)
+2026-07-01 05:36:26.851 | INFO     | autoscan.discovery.pipeline:run_discovery:70 - Starting search for language: python from page: 35
+2026-07-01 05:36:26.852 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:python stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 35, 'per_page': 30}
+2026-07-01 05:36:27.325 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 29 remaining. Resets at 1782884247
+2026-07-01 05:36:27.328 | ERROR    | autoscan.discovery.pipeline:run_discovery:82 - Error searching repos: Client error '422 Unprocessable Entity' for url 'https://api.github.com/search/repositories?q=is%3Apublic+language%3Apython+stars%3A%3E%3D50&sort=stars&order=desc&page=35&per_page=30'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-07-01 05:36:27.340 | INFO     | autoscan.discovery.pipeline:run_discovery:70 - Starting search for language: typescript from page: 35
+2026-07-01 05:36:27.343 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:typescript stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 35, 'per_page': 30}
+2026-07-01 05:36:27.683 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 28 remaining. Resets at 1782884247
+2026-07-01 05:36:27.686 | ERROR    | autoscan.discovery.pipeline:run_discovery:82 - Error searching repos: Client error '422 Unprocessable Entity' for url 'https://api.github.com/search/repositories?q=is%3Apublic+language%3Atypescript+stars%3A%3E%3D50&sort=stars&order=desc&page=35&per_page=30'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-07-01 05:36:27.693 | INFO     | autoscan.discovery.pipeline:run_discovery:70 - Starting search for language: go from page: 35
+2026-07-01 05:36:27.694 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:go stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 35, 'per_page': 30}
+2026-07-01 05:36:27.988 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 27 remaining. Resets at 1782884247
+2026-07-01 05:36:27.990 | ERROR    | autoscan.discovery.pipeline:run_discovery:82 - Error searching repos: Client error '422 Unprocessable Entity' for url 'https://api.github.com/search/repositories?q=is%3Apublic+language%3Ago+stars%3A%3E%3D50&sort=stars&order=desc&page=35&per_page=30'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2026-07-01 05:36:27.997 | INFO     | autoscan.discovery.pipeline:run_discovery:70 - Starting search for language: java from page: 28
+2026-07-01 05:36:27.998 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 28, 'per_page': 30}
+2026-07-01 05:36:29.477 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 26 remaining. Resets at 1782884247
+2026-07-01 05:36:29.511 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Jacksgong with params None
+2026-07-01 05:36:29.824 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Jacksgong with params None
+2026-07-01 05:36:30.147 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Jacksgong scored 0.55
+2026-07-01 05:36:30.158 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/bingoogolapple with params None
+2026-07-01 05:36:30.496 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/bingoogolapple with params None
+2026-07-01 05:36:30.817 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org bingoogolapple scored 0.55
+2026-07-01 05:36:30.827 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/oddfar with params None
+2026-07-01 05:36:31.176 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/oddfar with params None
+2026-07-01 05:36:31.496 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org oddfar scored 0.55
+2026-07-01 05:36:31.507 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/pqpo with params None
+2026-07-01 05:36:31.832 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/pqpo with params None
+2026-07-01 05:36:32.200 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org pqpo scored 0.55
+2026-07-01 05:36:32.211 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dinuscxj with params None
+2026-07-01 05:36:32.514 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/dinuscxj with params None
+2026-07-01 05:36:32.866 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dinuscxj scored 0.55
+2026-07-01 05:36:32.875 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/code4craft with params None
+2026-07-01 05:36:33.223 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/code4craft with params None
+2026-07-01 05:36:33.556 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org code4craft scored 0.55
+2026-07-01 05:36:33.569 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/knowm with params None
+2026-07-01 05:36:33.926 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org knowm scored 1.00
+2026-07-01 05:36:33.954 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: knowm with score 1.0
+2026-07-01 05:36:33.959 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Manabu-GT with params None
+2026-07-01 05:36:34.280 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Manabu-GT with params None
+2026-07-01 05:36:34.584 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Manabu-GT scored 0.45
+2026-07-01 05:36:34.588 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/oblac with params None
+2026-07-01 05:36:35.071 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org oblac scored 0.85
+2026-07-01 05:36:35.094 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: oblac with score 0.85
+2026-07-01 05:36:35.100 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/RikkaApps with params None
+2026-07-01 05:36:35.478 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org RikkaApps scored 0.75
+2026-07-01 05:36:35.491 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: RikkaApps with score 0.75
+2026-07-01 05:36:35.497 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/luckybilly with params None
+2026-07-01 05:36:35.886 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/luckybilly with params None
+2026-07-01 05:36:36.203 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org luckybilly scored 0.55
+2026-07-01 05:36:36.209 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/xcltapestry with params None
+2026-07-01 05:36:36.602 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/xcltapestry with params None
+2026-07-01 05:36:37.315 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org xcltapestry scored 0.55
+2026-07-01 05:36:37.319 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/awaitility with params None
+2026-07-01 05:36:37.683 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org awaitility scored 1.00
+2026-07-01 05:36:37.699 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: awaitility with score 1.0
+2026-07-01 05:36:37.704 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Dimezis with params None
+2026-07-01 05:36:38.141 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Dimezis with params None
+2026-07-01 05:36:38.550 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Dimezis scored 0.60
+2026-07-01 05:36:38.561 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Dimezis with score 0.6000000000000001
+2026-07-01 05:36:38.566 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/oldmanpushcart with params None
+2026-07-01 05:36:38.957 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/oldmanpushcart with params None
+2026-07-01 05:36:39.368 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org oldmanpushcart scored 0.55
+2026-07-01 05:36:39.384 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 29, 'per_page': 30}
+2026-07-01 05:36:40.701 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 25 remaining. Resets at 1782884247
+2026-07-01 05:36:40.709 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/BoltsFramework with params None
+2026-07-01 05:36:41.109 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org BoltsFramework scored 0.85
+2026-07-01 05:36:41.119 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: BoltsFramework with score 0.85
+2026-07-01 05:36:41.124 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/jbloch with params None
+2026-07-01 05:36:41.451 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/jbloch with params None
+2026-07-01 05:36:41.782 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org jbloch scored 0.45
+2026-07-01 05:36:41.785 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/orhanobut with params None
+2026-07-01 05:36:42.131 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/orhanobut with params None
+2026-07-01 05:36:42.509 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org orhanobut scored 0.45
+2026-07-01 05:36:42.516 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/NotFound9 with params None
+2026-07-01 05:36:42.836 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/NotFound9 with params None
+2026-07-01 05:36:43.158 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org NotFound9 scored 0.55
+2026-07-01 05:36:43.161 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/JeremyLiao with params None
+2026-07-01 05:36:43.485 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/JeremyLiao with params None
+2026-07-01 05:36:43.833 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org JeremyLiao scored 0.55
+2026-07-01 05:36:43.838 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/fishercoder1534 with params None
+2026-07-01 05:36:44.175 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/fishercoder1534 with params None
+2026-07-01 05:36:44.484 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org fishercoder1534 scored 0.70
+2026-07-01 05:36:44.495 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: fishercoder1534 with score 0.7000000000000001
+2026-07-01 05:36:44.499 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/kubernetes-client with params None
+2026-07-01 05:36:44.892 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org kubernetes-client scored 1.00
+2026-07-01 05:36:44.902 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: kubernetes-client with score 1.0
+2026-07-01 05:36:44.905 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lcodecorex with params None
+2026-07-01 05:36:45.307 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lcodecorex with params None
+2026-07-01 05:36:45.614 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lcodecorex scored 0.45
+2026-07-01 05:36:45.619 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Piasy with params None
+2026-07-01 05:36:45.963 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Piasy with params None
+2026-07-01 05:36:46.288 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Piasy scored 0.55
+2026-07-01 05:36:46.292 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/DependencyTrack with params None
+2026-07-01 05:36:46.699 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org DependencyTrack scored 1.00
+2026-07-01 05:36:46.708 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: DependencyTrack with score 1.0
+2026-07-01 05:36:46.714 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/rovo89 with params None
+2026-07-01 05:36:47.020 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/rovo89 with params None
+2026-07-01 05:36:47.326 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org rovo89 scored 0.45
+2026-07-01 05:36:47.330 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/shuzijun with params None
+2026-07-01 05:36:47.641 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/shuzijun with params None
+2026-07-01 05:36:47.951 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org shuzijun scored 0.55
+2026-07-01 05:36:47.955 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/makovkastar with params None
+2026-07-01 05:36:48.273 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/makovkastar with params None
+2026-07-01 05:36:48.613 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org makovkastar scored 0.25
+2026-07-01 05:36:48.621 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/pingfangushi with params None
+2026-07-01 05:36:48.934 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/pingfangushi with params None
+2026-07-01 05:36:49.303 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org pingfangushi scored 0.55
+2026-07-01 05:36:49.308 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/yacy with params None
+2026-07-01 05:36:49.681 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org yacy scored 1.00
+2026-07-01 05:36:49.689 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: yacy with score 1.0
+2026-07-01 05:36:49.692 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/mercyblitz with params None
+2026-07-01 05:36:49.995 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/mercyblitz with params None
+2026-07-01 05:36:50.305 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org mercyblitz scored 0.70
+2026-07-01 05:36:50.315 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: mercyblitz with score 0.7000000000000001
+2026-07-01 05:36:50.319 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/qstumn with params None
+2026-07-01 05:36:50.654 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/qstumn with params None
+2026-07-01 05:36:50.969 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org qstumn scored 0.55
+2026-07-01 05:36:50.973 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/zzhoujay with params None
+2026-07-01 05:36:51.303 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/zzhoujay with params None
+2026-07-01 05:36:51.635 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org zzhoujay scored 0.45
+2026-07-01 05:36:51.640 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/linyiqun with params None
+2026-07-01 05:36:51.963 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/linyiqun with params None
+2026-07-01 05:36:52.325 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org linyiqun scored 0.55
+2026-07-01 05:36:52.329 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/promeG with params None
+2026-07-01 05:36:52.662 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/promeG with params None
+2026-07-01 05:36:53.097 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org promeG scored 0.45
+2026-07-01 05:36:53.112 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/binIoter with params None
+2026-07-01 05:36:53.432 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/binIoter with params None
+2026-07-01 05:36:53.755 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org binIoter scored 0.55
+2026-07-01 05:36:53.757 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/portfolio-performance with params None
+2026-07-01 05:36:54.143 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org portfolio-performance scored 1.00
+2026-07-01 05:36:54.149 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: portfolio-performance with score 1.0
+2026-07-01 05:36:54.152 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/VaughnVernon with params None
+2026-07-01 05:36:54.493 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/VaughnVernon with params None
+2026-07-01 05:36:54.814 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org VaughnVernon scored 0.55
+2026-07-01 05:36:54.817 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/shopizer-ecommerce with params None
+2026-07-01 05:36:55.238 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/shopizer-ecommerce with params None
+2026-07-01 05:36:55.977 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org shopizer-ecommerce scored 0.55
+2026-07-01 05:36:55.982 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/JoanZapata with params None
+2026-07-01 05:36:56.315 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/JoanZapata with params None
+2026-07-01 05:36:56.671 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org JoanZapata scored 0.55
+2026-07-01 05:36:56.678 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 30, 'per_page': 30}
+2026-07-01 05:36:58.578 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 24 remaining. Resets at 1782884247
+2026-07-01 05:36:58.586 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/spotbugs with params None
+2026-07-01 05:36:59.028 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org spotbugs scored 1.00
+2026-07-01 05:36:59.041 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: spotbugs with score 1.0
+2026-07-01 05:36:59.045 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/watabou with params None
+2026-07-01 05:36:59.375 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/watabou with params None
+2026-07-01 05:36:59.705 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org watabou scored 0.55
+2026-07-01 05:36:59.711 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/bluelinelabs with params None
+2026-07-01 05:37:00.074 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org bluelinelabs scored 1.00
+2026-07-01 05:37:00.085 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: bluelinelabs with score 1.0
+2026-07-01 05:37:00.089 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/amirzaidi with params None
+2026-07-01 05:37:00.409 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/amirzaidi with params None
+2026-07-01 05:37:00.745 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org amirzaidi scored 0.55
+2026-07-01 05:37:00.749 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ZHENFENG13 with params None
+2026-07-01 05:37:01.143 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/ZHENFENG13 with params None
+2026-07-01 05:37:01.465 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ZHENFENG13 scored 0.45
+2026-07-01 05:37:01.468 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/databricks with params None
+2026-07-01 05:37:01.891 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org databricks scored 1.00
+2026-07-01 05:37:01.904 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: databricks with score 1.0
+2026-07-01 05:37:01.909 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/react-native-share with params None
+2026-07-01 05:37:02.369 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org react-native-share scored 0.90
+2026-07-01 05:37:02.380 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: react-native-share with score 0.9
+2026-07-01 05:37:02.386 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Exrick with params None
+2026-07-01 05:37:02.714 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Exrick with params None
+2026-07-01 05:37:03.048 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Exrick scored 0.55
+2026-07-01 05:37:03.051 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/JavaNoober with params None
+2026-07-01 05:37:03.381 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/JavaNoober with params None
+2026-07-01 05:37:03.696 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org JavaNoober scored 0.45
+2026-07-01 05:37:03.699 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/RoaringBitmap with params None
+2026-07-01 05:37:04.144 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org RoaringBitmap scored 1.00
+2026-07-01 05:37:04.156 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: RoaringBitmap with score 1.0
+2026-07-01 05:37:04.161 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/vipulasri with params None
+2026-07-01 05:37:04.481 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/vipulasri with params None
+2026-07-01 05:37:04.790 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org vipulasri scored 0.55
+2026-07-01 05:37:04.807 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/wendux with params None
+2026-07-01 05:37:05.129 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/wendux with params None
+2026-07-01 05:37:05.442 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org wendux scored 0.55
+2026-07-01 05:37:05.448 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/MovingBlocks with params None
+2026-07-01 05:37:05.806 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org MovingBlocks scored 1.00
+2026-07-01 05:37:05.816 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: MovingBlocks with score 1.0
+2026-07-01 05:37:05.823 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/uncle-novel with params None
+2026-07-01 05:37:06.193 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org uncle-novel scored 0.90
+2026-07-01 05:37:06.205 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: uncle-novel with score 0.9
+2026-07-01 05:37:06.210 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/yanzhenjie with params None
+2026-07-01 05:37:06.528 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/yanzhenjie with params None
+2026-07-01 05:37:06.912 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org yanzhenjie scored 0.45
+2026-07-01 05:37:06.916 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/JCTools with params None
+2026-07-01 05:37:07.323 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org JCTools scored 0.90
+2026-07-01 05:37:07.331 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: JCTools with score 0.9
+2026-07-01 05:37:07.336 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/tchiotludo with params None
+2026-07-01 05:37:07.691 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/tchiotludo with params None
+2026-07-01 05:37:08.025 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org tchiotludo scored 0.70
+2026-07-01 05:37:08.035 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: tchiotludo with score 0.7000000000000001
+2026-07-01 05:37:08.038 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/aurelhubert with params None
+2026-07-01 05:37:08.353 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/aurelhubert with params None
+2026-07-01 05:37:08.672 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org aurelhubert scored 0.45
+2026-07-01 05:37:08.674 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/MiguelCatalan with params None
+2026-07-01 05:37:08.986 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/MiguelCatalan with params None
+2026-07-01 05:37:09.294 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org MiguelCatalan scored 0.55
+2026-07-01 05:37:09.301 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/rbmonster with params None
+2026-07-01 05:37:09.675 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/rbmonster with params None
+2026-07-01 05:37:10.084 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org rbmonster scored 0.60
+2026-07-01 05:37:10.095 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: rbmonster with score 0.6000000000000001
+2026-07-01 05:37:10.099 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/helidon-io with params None
+2026-07-01 05:37:10.506 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org helidon-io scored 1.00
+2026-07-01 05:37:10.516 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: helidon-io with score 1.0
+2026-07-01 05:37:10.518 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/happydog-intj with params None
+2026-07-01 05:37:10.867 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/happydog-intj with params None
+2026-07-01 05:37:11.172 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org happydog-intj scored 0.45
+2026-07-01 05:37:11.180 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/blossom-editor with params None
+2026-07-01 05:37:11.557 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org blossom-editor scored 1.00
+2026-07-01 05:37:11.571 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: blossom-editor with score 1.0
+2026-07-01 05:37:11.575 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/mcxtzhang with params None
+2026-07-01 05:37:11.882 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/mcxtzhang with params None
+2026-07-01 05:37:12.177 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org mcxtzhang scored 0.55
+2026-07-01 05:37:12.184 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/oasisfeng with params None
+2026-07-01 05:37:12.542 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/oasisfeng with params None
+2026-07-01 05:37:12.865 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org oasisfeng scored 0.45
+2026-07-01 05:37:12.871 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 31, 'per_page': 30}
+2026-07-01 05:37:14.251 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 23 remaining. Resets at 1782884247
+2026-07-01 05:37:14.260 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/timehop with params None
+2026-07-01 05:37:14.631 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org timehop scored 0.65
+2026-07-01 05:37:14.636 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: timehop with score 0.65
+2026-07-01 05:37:14.640 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/sunfusheng with params None
+2026-07-01 05:37:15.001 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/sunfusheng with params None
+2026-07-01 05:37:15.350 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org sunfusheng scored 0.45
+2026-07-01 05:37:15.353 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Atmosphere with params None
+2026-07-01 05:37:15.751 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Atmosphere scored 1.00
+2026-07-01 05:37:15.761 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Atmosphere with score 1.0
+2026-07-01 05:37:15.764 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/zhpanvip with params None
+2026-07-01 05:37:16.070 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/zhpanvip with params None
+2026-07-01 05:37:16.393 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org zhpanvip scored 0.70
+2026-07-01 05:37:16.401 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: zhpanvip with score 0.7000000000000001
+2026-07-01 05:37:16.404 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/mpusher with params None
+2026-07-01 05:37:16.754 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org mpusher scored 0.85
+2026-07-01 05:37:16.767 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: mpusher with score 0.85
+2026-07-01 05:37:16.771 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/HelloWorld521 with params None
+2026-07-01 05:37:17.150 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/HelloWorld521 with params None
+2026-07-01 05:37:17.474 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org HelloWorld521 scored 0.45
+2026-07-01 05:37:17.479 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Haleydu with params None
+2026-07-01 05:37:18.279 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Haleydu with params None
+2026-07-01 05:37:18.619 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Haleydu scored 0.45
+2026-07-01 05:37:18.626 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/OpenHFT with params None
+2026-07-01 05:37:18.994 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org OpenHFT scored 1.00
+2026-07-01 05:37:19.003 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: OpenHFT with score 1.0
+2026-07-01 05:37:19.007 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/IrisShaders with params None
+2026-07-01 05:37:19.396 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org IrisShaders scored 1.00
+2026-07-01 05:37:19.408 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: IrisShaders with score 1.0
+2026-07-01 05:37:19.412 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lygttpod with params None
+2026-07-01 05:37:19.731 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lygttpod with params None
+2026-07-01 05:37:20.056 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lygttpod scored 0.55
+2026-07-01 05:37:20.059 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/CameraKit with params None
+2026-07-01 05:37:20.529 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org CameraKit scored 0.85
+2026-07-01 05:37:20.540 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: CameraKit with score 0.85
+2026-07-01 05:37:20.542 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Ereza with params None
+2026-07-01 05:37:20.921 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Ereza with params None
+2026-07-01 05:37:21.308 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Ereza scored 0.55
+2026-07-01 05:37:21.312 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/jtablesaw with params None
+2026-07-01 05:37:21.691 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org jtablesaw scored 1.00
+2026-07-01 05:37:21.699 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: jtablesaw with score 1.0
+2026-07-01 05:37:21.703 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/undertow-io with params None
+2026-07-01 05:37:22.081 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org undertow-io scored 0.90
+2026-07-01 05:37:22.091 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: undertow-io with score 0.9
+2026-07-01 05:37:22.095 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/TNG with params None
+2026-07-01 05:37:22.475 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org TNG scored 1.00
+2026-07-01 05:37:22.484 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: TNG with score 1.0
+2026-07-01 05:37:22.487 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/1024-lab with params None
+2026-07-01 05:37:22.801 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/1024-lab with params None
+2026-07-01 05:37:23.142 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org 1024-lab scored 0.70
+2026-07-01 05:37:23.150 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: 1024-lab with score 0.7000000000000001
+2026-07-01 05:37:23.153 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/coderbruis with params None
+2026-07-01 05:37:23.474 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/coderbruis with params None
+2026-07-01 05:37:23.909 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org coderbruis scored 0.70
+2026-07-01 05:37:23.917 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: coderbruis with score 0.7000000000000001
+2026-07-01 05:37:23.920 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lihangleo2 with params None
+2026-07-01 05:37:24.318 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lihangleo2 with params None
+2026-07-01 05:37:24.728 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lihangleo2 scored 0.70
+2026-07-01 05:37:24.740 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: lihangleo2 with score 0.7000000000000001
+2026-07-01 05:37:24.744 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/DataLinkDC with params None
+2026-07-01 05:37:25.115 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org DataLinkDC scored 0.90
+2026-07-01 05:37:25.124 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: DataLinkDC with score 0.9
+2026-07-01 05:37:25.128 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/FasterXML with params None
+2026-07-01 05:37:25.548 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org FasterXML scored 1.00
+2026-07-01 05:37:25.558 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: FasterXML with score 1.0
+2026-07-01 05:37:25.564 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/yanzhenjie with params None
+2026-07-01 05:37:25.956 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/yanzhenjie with params None
+2026-07-01 05:37:26.271 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org yanzhenjie scored 0.45
+2026-07-01 05:37:26.274 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/roboguice with params None
+2026-07-01 05:37:26.676 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org roboguice scored 0.55
+2026-07-01 05:37:26.680 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/springdoc with params None
+2026-07-01 05:37:27.067 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org springdoc scored 1.00
+2026-07-01 05:37:27.084 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: springdoc with score 1.0
+2026-07-01 05:37:27.097 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/stfalcon-studio with params None
+2026-07-01 05:37:27.595 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org stfalcon-studio scored 0.85
+2026-07-01 05:37:27.602 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: stfalcon-studio with score 0.85
+2026-07-01 05:37:27.605 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ethanhua with params None
+2026-07-01 05:37:27.920 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/ethanhua with params None
+2026-07-01 05:37:28.315 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ethanhua scored 0.55
+2026-07-01 05:37:28.318 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/microservices-patterns with params None
+2026-07-01 05:37:28.722 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org microservices-patterns scored 0.90
+2026-07-01 05:37:28.731 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: microservices-patterns with score 0.9
+2026-07-01 05:37:28.736 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/andOTP with params None
+2026-07-01 05:37:29.130 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org andOTP scored 0.75
+2026-07-01 05:37:29.134 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: andOTP with score 0.75
+2026-07-01 05:37:29.139 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/liuyubobobo with params None
+2026-07-01 05:37:29.462 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/liuyubobobo with params None
+2026-07-01 05:37:29.848 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org liuyubobobo scored 0.55
+2026-07-01 05:37:29.854 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 32, 'per_page': 30}
+2026-07-01 05:37:31.394 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 29 remaining. Resets at 1782884310
+2026-07-01 05:37:31.419 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Nekogram with params None
+2026-07-01 05:37:31.801 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Nekogram scored 1.00
+2026-07-01 05:37:31.807 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Nekogram with score 1.0
+2026-07-01 05:37:31.810 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Mojang with params None
+2026-07-01 05:37:32.306 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Mojang scored 0.85
+2026-07-01 05:37:32.316 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Mojang with score 0.85
+2026-07-01 05:37:32.320 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ByteLegend with params None
+2026-07-01 05:37:32.714 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ByteLegend scored 0.75
+2026-07-01 05:37:32.721 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: ByteLegend with score 0.75
+2026-07-01 05:37:32.724 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/spring-io with params None
+2026-07-01 05:37:33.226 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org spring-io scored 1.00
+2026-07-01 05:37:33.233 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: spring-io with score 1.0
+2026-07-01 05:37:33.236 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dingjikerbo with params None
+2026-07-01 05:37:33.635 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/dingjikerbo with params None
+2026-07-01 05:37:34.045 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dingjikerbo scored 0.45
+2026-07-01 05:37:34.047 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/mbechler with params None
+2026-07-01 05:37:34.762 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/mbechler with params None
+2026-07-01 05:37:35.172 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org mbechler scored 0.55
+2026-07-01 05:37:35.174 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ryanhoo with params None
+2026-07-01 05:37:35.557 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/ryanhoo with params None
+2026-07-01 05:37:35.888 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ryanhoo scored 0.55
+2026-07-01 05:37:35.891 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/linkedin with params None
+2026-07-01 05:37:36.298 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org linkedin scored 0.85
+2026-07-01 05:37:36.312 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: linkedin with score 0.85
+2026-07-01 05:37:36.316 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Aefyr with params None
+2026-07-01 05:37:36.707 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Aefyr with params None
+2026-07-01 05:37:37.023 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Aefyr scored 0.45
+2026-07-01 05:37:37.026 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lisawray with params None
+2026-07-01 05:37:37.424 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lisawray with params None
+2026-07-01 05:37:37.834 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lisawray scored 0.55
+2026-07-01 05:37:37.837 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/networknt with params None
+2026-07-01 05:37:38.255 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org networknt scored 0.90
+2026-07-01 05:37:38.263 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: networknt with score 0.9
+2026-07-01 05:37:38.268 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/fabric8io with params None
+2026-07-01 05:37:38.669 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org fabric8io scored 1.00
+2026-07-01 05:37:38.680 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: fabric8io with score 1.0
+2026-07-01 05:37:38.686 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/yangfuhai with params None
+2026-07-01 05:37:39.282 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/yangfuhai with params None
+2026-07-01 05:37:39.702 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org yangfuhai scored 0.45
+2026-07-01 05:37:39.705 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/KunMinX with params None
+2026-07-01 05:37:40.112 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/KunMinX with params None
+2026-07-01 05:37:40.712 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org KunMinX scored 0.45
+2026-07-01 05:37:40.715 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/nageoffer with params None
+2026-07-01 05:37:41.123 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org nageoffer scored 1.00
+2026-07-01 05:37:41.134 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: nageoffer with score 1.0
+2026-07-01 05:37:41.138 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/huburt-Hu with params None
+2026-07-01 05:37:41.519 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/huburt-Hu with params None
+2026-07-01 05:37:41.830 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org huburt-Hu scored 0.45
+2026-07-01 05:37:41.837 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/cSploit with params None
+2026-07-01 05:37:42.237 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org cSploit scored 0.75
+2026-07-01 05:37:42.244 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: cSploit with score 0.75
+2026-07-01 05:37:42.247 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/spockframework with params None
+2026-07-01 05:37:42.646 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org spockframework scored 1.00
+2026-07-01 05:37:42.654 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: spockframework with score 1.0
+2026-07-01 05:37:42.657 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/litesuits with params None
+2026-07-01 05:37:43.057 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/litesuits with params None
+2026-07-01 05:37:43.466 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org litesuits scored 0.45
+2026-07-01 05:37:43.469 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dtinit with params None
+2026-07-01 05:37:43.874 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dtinit scored 1.00
+2026-07-01 05:37:43.884 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: dtinit with score 1.0
+2026-07-01 05:37:43.890 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/googlemaps with params None
+2026-07-01 05:37:44.386 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org googlemaps scored 1.00
+2026-07-01 05:37:44.393 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: googlemaps with score 1.0
+2026-07-01 05:37:44.397 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/grimmory-tools with params None
+2026-07-01 05:37:44.788 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org grimmory-tools scored 1.00
+2026-07-01 05:37:44.796 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: grimmory-tools with score 1.0
+2026-07-01 05:37:44.799 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/anggrayudi with params None
+2026-07-01 05:37:45.205 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/anggrayudi with params None
+2026-07-01 05:37:45.616 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org anggrayudi scored 0.55
+2026-07-01 05:37:45.619 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/hmkcode with params None
+2026-07-01 05:37:46.025 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/hmkcode with params None
+2026-07-01 05:37:46.435 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org hmkcode scored 0.45
+2026-07-01 05:37:46.440 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 33, 'per_page': 30}
+2026-07-01 05:37:47.666 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 28 remaining. Resets at 1782884310
+2026-07-01 05:37:47.672 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Guardsquare with params None
+2026-07-01 05:37:48.040 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Guardsquare scored 1.00
+2026-07-01 05:37:48.049 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Guardsquare with score 1.0
+2026-07-01 05:37:48.054 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/proninyaroslav with params None
+2026-07-01 05:37:48.379 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/proninyaroslav with params None
+2026-07-01 05:37:48.790 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org proninyaroslav scored 0.70
+2026-07-01 05:37:48.802 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: proninyaroslav with score 0.7000000000000001
+2026-07-01 05:37:48.805 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/rockerhieu with params None
+2026-07-01 05:37:49.199 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/rockerhieu with params None
+2026-07-01 05:37:49.609 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org rockerhieu scored 0.45
+2026-07-01 05:37:49.612 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/niumoo with params None
+2026-07-01 05:37:50.019 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/niumoo with params None
+2026-07-01 05:37:50.318 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org niumoo scored 0.70
+2026-07-01 05:37:50.326 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: niumoo with score 0.7000000000000001
+2026-07-01 05:37:50.329 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/fyhertz with params None
+2026-07-01 05:37:50.738 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/fyhertz with params None
+2026-07-01 05:37:51.151 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org fyhertz scored 0.55
+2026-07-01 05:37:51.154 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/AxonIQ with params None
+2026-07-01 05:37:51.555 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org AxonIQ scored 1.00
+2026-07-01 05:37:51.564 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: AxonIQ with score 1.0
+2026-07-01 05:37:51.569 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/PlexPt with params None
+2026-07-01 05:37:51.965 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/PlexPt with params None
+2026-07-01 05:37:52.375 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org PlexPt scored 0.45
+2026-07-01 05:37:52.381 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/MeteorDevelopment with params None
+2026-07-01 05:37:52.788 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org MeteorDevelopment scored 1.00
+2026-07-01 05:37:52.798 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: MeteorDevelopment with score 1.0
+2026-07-01 05:37:52.802 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dropbox with params None
+2026-07-01 05:37:53.222 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dropbox scored 0.85
+2026-07-01 05:37:53.229 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: dropbox with score 0.85
+2026-07-01 05:37:53.233 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/WVector with params None
+2026-07-01 05:37:53.602 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/WVector with params None
+2026-07-01 05:37:54.011 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org WVector scored 0.45
+2026-07-01 05:37:54.014 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/vert-x3 with params None
+2026-07-01 05:37:54.421 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org vert-x3 scored 0.90
+2026-07-01 05:37:54.430 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: vert-x3 with score 0.9
+2026-07-01 05:37:54.433 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/openrewrite with params None
+2026-07-01 05:37:54.832 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org openrewrite scored 1.00
+2026-07-01 05:37:54.839 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: openrewrite with score 1.0
+2026-07-01 05:37:54.842 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/tyrantgit with params None
+2026-07-01 05:37:55.240 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/tyrantgit with params None
+2026-07-01 05:37:55.651 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org tyrantgit scored 0.45
+2026-07-01 05:37:55.653 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/kikoso with params None
+2026-07-01 05:37:56.059 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/kikoso with params None
+2026-07-01 05:37:56.379 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org kikoso scored 0.35
+2026-07-01 05:37:56.382 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/davideas with params None
+2026-07-01 05:37:56.776 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/davideas with params None
+2026-07-01 05:37:57.186 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org davideas scored 0.70
+2026-07-01 05:37:57.194 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: davideas with score 0.7000000000000001
+2026-07-01 05:37:57.197 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/immutables with params None
+2026-07-01 05:37:57.595 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org immutables scored 1.00
+2026-07-01 05:37:57.603 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: immutables with score 1.0
+2026-07-01 05:37:57.606 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dongjunkun with params None
+2026-07-01 05:37:58.005 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/dongjunkun with params None
+2026-07-01 05:37:58.298 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dongjunkun scored 0.55
+2026-07-01 05:37:58.301 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Athou with params None
+2026-07-01 05:37:58.622 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Athou with params None
+2026-07-01 05:37:59.029 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Athou scored 0.60
+2026-07-01 05:37:59.038 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Athou with score 0.6000000000000001
+2026-07-01 05:37:59.041 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/LinShunKang with params None
+2026-07-01 05:37:59.439 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/LinShunKang with params None
+2026-07-01 05:37:59.849 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org LinShunKang scored 0.60
+2026-07-01 05:37:59.856 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: LinShunKang with score 0.6000000000000001
+2026-07-01 05:37:59.859 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/JakeWharton with params None
+2026-07-01 05:38:00.257 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/JakeWharton with params None
+2026-07-01 05:38:00.769 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org JakeWharton scored 0.55
+2026-07-01 05:38:00.773 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/code4craft with params None
+2026-07-01 05:38:01.486 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/code4craft with params None
+2026-07-01 05:38:01.897 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org code4craft scored 0.55
+2026-07-01 05:38:01.899 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/dariuszseweryn with params None
+2026-07-01 05:38:02.306 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/dariuszseweryn with params None
+2026-07-01 05:38:02.716 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org dariuszseweryn scored 0.45
+2026-07-01 05:38:02.725 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/rom1v with params None
+2026-07-01 05:38:03.127 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/rom1v with params None
+2026-07-01 05:38:03.537 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org rom1v scored 0.55
+2026-07-01 05:38:03.547 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/johncarl81 with params None
+2026-07-01 05:38:03.856 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/johncarl81 with params None
+2026-07-01 05:38:04.251 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org johncarl81 scored 0.55
+2026-07-01 05:38:04.253 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/eclipse-openj9 with params None
+2026-07-01 05:38:04.661 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org eclipse-openj9 scored 0.90
+2026-07-01 05:38:04.668 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: eclipse-openj9 with score 0.9
+2026-07-01 05:38:04.672 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/arimorty with params None
+2026-07-01 05:38:05.070 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/arimorty with params None
+2026-07-01 05:38:05.378 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org arimorty scored 0.45
+2026-07-01 05:38:05.381 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/luontola with params None
+2026-07-01 05:38:05.713 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/luontola with params None
+2026-07-01 05:38:06.095 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org luontola scored 0.55
+2026-07-01 05:38:06.098 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /search/repositories with params {'q': 'is:public language:java stars:>=50', 'sort': 'stars', 'order': 'desc', 'page': 34, 'per_page': 30}
+2026-07-01 05:38:07.732 | WARNING  | autoscan.discovery.github_search:_check_rate_limit:44 - GitHub API rate limit low: 27 remaining. Resets at 1782884310
+2026-07-01 05:38:07.742 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/andremion with params None
+2026-07-01 05:38:08.143 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/andremion with params None
+2026-07-01 05:38:08.552 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org andremion scored 0.55
+2026-07-01 05:38:08.555 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lenve with params None
+2026-07-01 05:38:08.961 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lenve with params None
+2026-07-01 05:38:09.371 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lenve scored 0.45
+2026-07-01 05:38:09.378 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/lsjwzh with params None
+2026-07-01 05:38:09.780 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/lsjwzh with params None
+2026-07-01 05:38:10.190 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org lsjwzh scored 0.45
+2026-07-01 05:38:10.195 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/nytimes with params None
+2026-07-01 05:38:10.600 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org nytimes scored 0.85
+2026-07-01 05:38:10.605 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: nytimes with score 0.85
+2026-07-01 05:38:10.608 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/codeestX with params None
+2026-07-01 05:38:11.009 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/codeestX with params None
+2026-07-01 05:38:11.318 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org codeestX scored 0.55
+2026-07-01 05:38:11.322 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/baoyongzhang with params None
+2026-07-01 05:38:11.768 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/baoyongzhang with params None
+2026-07-01 05:38:12.248 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org baoyongzhang scored 0.55
+2026-07-01 05:38:12.251 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/WinterChenS with params None
+2026-07-01 05:38:12.673 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/WinterChenS with params None
+2026-07-01 05:38:13.085 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org WinterChenS scored 0.60
+2026-07-01 05:38:13.105 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: WinterChenS with score 0.6000000000000001
+2026-07-01 05:38:13.110 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/KingJA with params None
+2026-07-01 05:38:13.491 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/KingJA with params None
+2026-07-01 05:38:14.094 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org KingJA scored 0.55
+2026-07-01 05:38:14.100 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/bastillion-io with params None
+2026-07-01 05:38:14.518 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org bastillion-io scored 1.00
+2026-07-01 05:38:14.546 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: bastillion-io with score 1.0
+2026-07-01 05:38:14.550 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ittianyu with params None
+2026-07-01 05:38:15.002 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/ittianyu with params None
+2026-07-01 05:38:15.412 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ittianyu scored 0.60
+2026-07-01 05:38:15.420 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: ittianyu with score 0.6000000000000001
+2026-07-01 05:38:15.423 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Devo919 with params None
+2026-07-01 05:38:15.821 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Devo919 with params None
+2026-07-01 05:38:16.231 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Devo919 scored 0.60
+2026-07-01 05:38:16.238 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Devo919 with score 0.6000000000000001
+2026-07-01 05:38:16.241 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/PeterCxy with params None
+2026-07-01 05:38:16.641 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/PeterCxy with params None
+2026-07-01 05:38:17.050 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org PeterCxy scored 0.70
+2026-07-01 05:38:17.058 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: PeterCxy with score 0.7000000000000001
+2026-07-01 05:38:17.060 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/EngineHub with params None
+2026-07-01 05:38:17.433 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org EngineHub scored 1.00
+2026-07-01 05:38:17.442 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: EngineHub with score 1.0
+2026-07-01 05:38:17.445 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/ferredoxin with params None
+2026-07-01 05:38:17.870 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org ferredoxin scored 0.75
+2026-07-01 05:38:17.877 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: ferredoxin with score 0.75
+2026-07-01 05:38:17.879 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/phodal with params None
+2026-07-01 05:38:18.279 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/phodal with params None
+2026-07-01 05:38:18.689 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org phodal scored 0.55
+2026-07-01 05:38:18.695 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/alamkanak with params None
+2026-07-01 05:38:19.098 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/alamkanak with params None
+2026-07-01 05:38:19.918 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org alamkanak scored 0.55
+2026-07-01 05:38:19.920 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/unitycatalog with params None
+2026-07-01 05:38:20.329 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org unitycatalog scored 1.00
+2026-07-01 05:38:20.338 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: unitycatalog with score 1.0
+2026-07-01 05:38:20.341 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Grt1228 with params None
+2026-07-01 05:38:20.737 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Grt1228 with params None
+2026-07-01 05:38:21.147 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Grt1228 scored 0.55
+2026-07-01 05:38:21.150 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/Neamar with params None
+2026-07-01 05:38:21.557 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/Neamar with params None
+2026-07-01 05:38:21.968 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org Neamar scored 0.70
+2026-07-01 05:38:21.983 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: Neamar with score 0.7000000000000001
+2026-07-01 05:38:21.989 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/woxingxiao with params None
+2026-07-01 05:38:22.324 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/woxingxiao with params None
+2026-07-01 05:38:22.682 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org woxingxiao scored 0.55
+2026-07-01 05:38:22.685 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/sherxon with params None
+2026-07-01 05:38:23.091 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/sherxon with params None
+2026-07-01 05:38:23.399 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org sherxon scored 0.45
+2026-07-01 05:38:23.402 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/GitLqr with params None
+2026-07-01 05:38:24.220 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/GitLqr with params None
+2026-07-01 05:38:24.634 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org GitLqr scored 0.70
+2026-07-01 05:38:24.647 | INFO     | autoscan.discovery.pipeline:run_discovery:161 - Saved company: GitLqr with score 0.7000000000000001
+2026-07-01 05:38:24.650 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /orgs/guolindev with params None
+2026-07-01 05:38:25.037 | DEBUG    | autoscan.discovery.github_search:_make_request:53 - Making GitHub API request to /users/guolindev with params None
+2026-07-01 05:38:25.349 | INFO     | autoscan.discovery.org_filter:score_org:120 - Org guolindev scored 0.55
+
+--- Discovery Summary ---
+Organizations evaluated: 207
+Qualified companies saved: 80
+Repositories saved: 76
+-------------------------
+
+05:38:25 Successfully completed autoscan.discovery.pipeline.run_discovery_sync() job in 0:02:00.445661s on worker d2577848ffd6489f95cca410df4dcd3d
+05:38:25 discovery: Job OK (330f8037-dee5-4ed2-8cfa-35c74730a7ef)
+05:38:25 Result is kept for 500 seconds
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+05:51:55 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: discovery
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: enrichment
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: cloning
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: scanning
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: verification
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: impact
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: reporting
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: contacts
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: outreach
+06:05:25 Worker d2577848ffd6489f95cca410df4dcd3d: cleaning registries for queue: followup

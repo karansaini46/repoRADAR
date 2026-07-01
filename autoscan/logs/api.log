@@ -1,0 +1,55 @@
+INFO:     Started server process [8]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     172.20.0.1:60908 - "GET /api/dashboard/verified-findings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60928 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60910 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60926 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:60944 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46080 - "POST /api/system/manual-start HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46102 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46118 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46094 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:46100 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58706 - "GET /api/dashboard/verified-findings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40054 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40068 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40038 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:40046 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43508 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43524 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43480 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43496 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43524 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43496 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43508 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43480 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43496 - "GET /api/system/settings HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43480 - "GET /api/dashboard/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43524 - "GET /api/dashboard/vulnerable-companies HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43508 - "GET /api/dashboard/funnel HTTP/1.1" 200 OK

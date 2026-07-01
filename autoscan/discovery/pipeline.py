@@ -176,6 +176,10 @@ async def run_discovery(
     print(f"-------------------------\n")
 
 
+def run_discovery_sync(*args, **kwargs):
+    """Synchronous wrapper for RQ worker execution."""
+    asyncio.run(run_discovery(*args, **kwargs))
+
 def main():
     parser = argparse.ArgumentParser(description="AutoScan GitHub Discovery Engine")
     parser.add_argument("--min-score", type=float, default=0.6, help="Minimum qualification score (0.0 to 1.0)")
@@ -188,11 +192,11 @@ def main():
     logger.remove()
     logger.add(sys.stderr, format="{time} {level} {message}", level="INFO")
     
-    asyncio.run(run_discovery(
+    run_discovery_sync(
         languages=args.languages,
         min_score=args.min_score,
         limit=args.limit
-    ))
+    )
 
 if __name__ == "__main__":
     main()

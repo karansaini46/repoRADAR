@@ -21,7 +21,7 @@ interface CompanyDetail {
     created_at: string | null; updated_at: string | null;
   };
   repositories: { id: number; name: string; full_name: string; language: string | null; stars: number; finding_count: number; status: string | null; last_scanned_at: string | null }[];
-  findings: { id: number; type: string; severity: string; title: string; description: string | null; file_path: string | null; line_no: number | null; scanner: string; verified: boolean | null; ai_explanation: string | null; ai_recommendation: string | null; created_at: string | null }[];
+  findings: { id: number; type: string; severity: string; title: string; description: string | null; file_path: string | null; line_no: number | null; scanner: string; verified: boolean | null; ai_explanation: string | null; ai_recommendation: string | null; repo_full_name: string | null; created_at: string | null }[];
   contacts: { id: number; email: string; first_name: string | null; last_name: string | null; position: string | null; score: number | null; is_verified: boolean | null }[];
   emails: { id: number; subject: string; contact_id: number; sequence_num: number; sent_at: string | null; opened_at: string | null; clicked_at: string | null; events: { event_type: string; created_at: string | null }[] }[];
   payments: { id: number; report_id: number; amount_cents: number; status: string; stripe_session_id: string; created_at: string | null }[];
@@ -53,6 +53,7 @@ export default function CompanyDetailPage({
   const [loading, setLoading] = useState(true);
   const [tab, setTab] = useState<Tab>("Overview");
   const [actionLoading, setActionLoading] = useState<string | null>(null);
+  const [expandedFindingId, setExpandedFindingId] = useState<number | null>(null);
 
   useEffect(() => { params.then((p) => setCompanyId(p.id)); }, [params]);
 
@@ -260,23 +261,106 @@ export default function CompanyDetailPage({
                 </thead>
                 <tbody>
                   {data.findings.map((f) => (
-                    <tr key={f.id} className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
-                      <td className="py-3 px-4">
-                        <span className={`px-2 py-0.5 rounded-md text-[10px] font-semibold uppercase border ${SEV_STYLES[f.severity?.toLowerCase()] || SEV_STYLES.low}`}>
-                          {f.severity}
-                        </span>
-                      </td>
-                      <td className="py-3 px-4 text-neutral-200 max-w-xs truncate">{f.title}</td>
-                      <td className="py-3 px-4 font-mono text-[11px] text-neutral-500 max-w-[200px] truncate">{f.file_path || "—"}</td>
-                      <td className="py-3 px-4 text-xs text-neutral-400">{f.scanner}</td>
-                      <td className="py-3 px-4 text-center">
-                        {f.verified ? (
-                          <span className="text-emerald-400">✓</span>
-                        ) : (
-                          <span className="text-neutral-600">—</span>
-                        )}
-                      </td>
-                    </tr>
+                    <React.Fragment key={f.id}>
+                      <tr 
+                        className="border-b border-white/5 hover:bg-white/[0.02] transition-colors cursor-pointer"
+                        onClick={() => setExpandedFindingId(expandedFindingId === f.id ? null : f.id)}
+                      >
+                        <td className="py-3 px-4">
+                          <span className={`px-2 py-0.5 rounded-md text-[10px] font-semibold uppercase border ${SEV_STYLES[f.severity?.toLowerCase()] || SEV_STYLES.low}`}>
+                            {f.severity}
+                          </span>
+                        </td>
+                        <td className="py-3 px-4 text-neutral-200 max-w-xs truncate flex items-center gap-2">
+                          <svg className={`w-4 h-4 text-neutral-500 transition-transform ${expandedFindingId === f.id ? "rotate-90" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
+                          {f.title}
+                        </td>
+                        <td className="py-3 px-4 font-mono text-[11px] text-neutral-500 max-w-[200px] truncate">
+                          {f.file_path || "—"}
+                          {f.line_no && <span className="text-neutral-600">:{f.line_no}</span>}
+                        </td>
+                        <td className="py-3 px-4 text-xs text-neutral-400">{f.scanner}</td>
+                        <td className="py-3 px-4 text-center">
+                          {f.verified ? (
+                            <span className="text-emerald-400">✓</span>
+                          ) : (
+                            <span className="text-neutral-600">—</span>
+                          )}
+                        </td>
+                      </tr>
+                      {expandedFindingId === f.id && (
+                        <tr className="border-b border-white/5 bg-black/20">
+                          <td colSpan={5} className="p-6">
+                            <div className="space-y-4 max-w-3xl">
+                              {f.description && (
+                                <div>
+                                  <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Original Description</h4>
+                                  <div className="text-sm text-neutral-300 p-3 rounded-lg bg-white/5 font-mono whitespace-pre-wrap">{f.description}</div>
+                                </div>
+                              )}
+
+                              {/* GitHub Source Link */}
+                              {f.file_path && (
+                                <div>
+                                  <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    Source Location
+                                  </h4>
+                                  <a
+                                    href={`https://github.com/${f.repo_full_name || ''}/blob/HEAD/${f.file_path}${f.line_no ? `#L${f.line_no}` : ''}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10 hover:border-indigo-500/30 hover:bg-white/[0.07] transition-all group"
+                                  >
+                                    <div className="flex-1 min-w-0">
+                                      <p className="text-sm text-indigo-400 font-mono truncate group-hover:text-indigo-300 transition-colors">
+                                        {f.file_path}{f.line_no ? `:${f.line_no}` : ''}
+                                      </p>
+                                      <p className="text-[11px] text-neutral-600 mt-0.5">
+                                        {f.repo_full_name || 'unknown'}
+                                      </p>
+                                    </div>
+                                    <span className="px-3 py-1.5 text-xs font-medium rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-500/20 transition-colors shrink-0">
+                                      View on GitHub →
+                                    </span>
+                                  </a>
+                                </div>
+                              )}
+                              
+                              {f.verified && (
+                                <>
+                                  {f.ai_explanation && (
+                                    <div>
+                                      <h4 className="text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                        AI Analysis
+                                      </h4>
+                                      <div className="text-sm text-neutral-200 p-4 rounded-lg border border-indigo-500/20 bg-indigo-500/5 leading-relaxed whitespace-pre-wrap">{f.ai_explanation}</div>
+                                    </div>
+                                  )}
+                                  
+                                  {f.ai_recommendation && (
+                                    <div>
+                                      <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        Recommended Fix
+                                      </h4>
+                                      <div className="text-sm text-neutral-200 p-4 rounded-lg border border-emerald-500/20 bg-emerald-500/5 leading-relaxed whitespace-pre-wrap">{f.ai_recommendation}</div>
+                                    </div>
+                                  )}
+                                </>
+                              )}
+                              
+                              {!f.verified && (
+                                <div className="text-sm text-neutral-500 italic">
+                                  This finding is currently awaiting AI verification. Check back later for detailed analysis and remediation steps.
+                                </div>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      )}
+                    </React.Fragment>
                   ))}
                   {data.findings.length === 0 && (
                     <tr><td colSpan={5} className="py-12 text-center text-neutral-600">No findings</td></tr>

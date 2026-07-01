@@ -1,17 +1,18 @@
 import json
 import os
-from anthropic import Anthropic
+from google import genai
+from google.genai import types
 
 TRACKER_URL = os.getenv("TRACKER_URL", "http://localhost:8000")
 
 class EmailComposer:
-    def __init__(self, anthropic_api_key: str):
-        self.client = Anthropic(api_key=anthropic_api_key)
+    def __init__(self, api_key: str, model: str = 'gemini-2.5-flash'):
+        self.client = genai.Client(api_key=api_key)
+        self.model = model
 
     def _get_top_finding(self, findings):
         if not findings:
             return None
-        # Try to find a high/critical finding first
         sorted_findings = sorted(
             findings, 
             key=lambda f: 0 if f.severity.lower() == 'critical' else 1 if f.severity.lower() == 'high' else 2
@@ -40,17 +41,15 @@ Please return ONLY a valid JSON object with the following keys:
 - "html_body": The HTML formatted version of the email body. Use basic tags like <p>, <br>, <strong>.
 - "text_body": The plain text version of the email body.
 """
-        response = self.client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            max_tokens=1024,
-            system="You are an expert cybersecurity sales professional. You write highly converting, concise B2B cold emails. You output strict JSON without any markdown formatting.",
-            messages=[
-                {"role": "user", "content": prompt}
-            ]
+        response = self.client.models.generate_content(
+            model=self.model,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                system_instruction="You are an expert cybersecurity sales professional. You write highly converting, concise B2B cold emails. You output strict JSON without any markdown formatting."
+            )
         )
         
-        content = response.content[0].text
-        # Clean up any potential markdown formatting from the response
+        content = response.text
         if content.startswith("```json"):
             content = content[7:-3].strip()
         elif content.startswith("```"):
@@ -59,7 +58,6 @@ Please return ONLY a valid JSON object with the following keys:
         try:
             email_data = json.loads(content)
         except json.JSONDecodeError:
-            # Fallback if json parsing fails
             email_data = {
                 "subject": f"Security findings for {company.name}",
                 "html_body": f"<p>Hi {contact_name},</p><p>We found {num_issues} security issues in your GitHub repositories. Top finding: {top_finding_title}.</p><p>View full report here: <a href='{report_url}'>{report_url}</a></p>",
@@ -90,16 +88,15 @@ Please return ONLY a valid JSON object with the following keys:
 - "html_body": The HTML formatted version of the email body.
 - "text_body": The plain text version of the email body.
 """
-        response = self.client.messages.create(
-            model="claude-3-5-sonnet-20241022",
-            max_tokens=512,
-            system="You are an expert cybersecurity sales professional. Output strict JSON without markdown formatting.",
-            messages=[
-                {"role": "user", "content": prompt}
-            ]
+        response = self.client.models.generate_content(
+            model=self.model,
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                system_instruction="You are an expert cybersecurity sales professional. Output strict JSON without markdown formatting."
+            )
         )
         
-        content = response.content[0].text
+        content = response.text
         if content.startswith("```json"):
             content = content[7:-3].strip()
         elif content.startswith("```"):

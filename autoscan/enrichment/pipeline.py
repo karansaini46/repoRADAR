@@ -117,6 +117,9 @@ async def run_enrichment(min_github_score: float = 0.6, limit: int = 100, force_
     print(f"Companies processed: {processed}")
     print(f"--------------------------\n")
 
+def run_enrichment_sync(*args, **kwargs):
+    """Synchronous wrapper for RQ worker execution."""
+    asyncio.run(run_enrichment(*args, **kwargs))
 
 def main():
     parser = argparse.ArgumentParser(description="AutoScan Enrichment Engine")

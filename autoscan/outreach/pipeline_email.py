@@ -14,15 +14,15 @@ logger = logging.getLogger(__name__)
 def run_outreach(company_id: int = None, limit: int = 10, dry_run: bool = False):
     db = SessionLocal()
     
-    anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", "dummy")
+    gemini_api_key = os.getenv("GEMINI_API_KEY", "dummy")
     sendgrid_api_key = os.getenv("SENDGRID_API_KEY", "dummy")
     from_email = os.getenv("FROM_EMAIL", "security@autoscan.io")
 
-    if not dry_run and (anthropic_api_key == "dummy" or sendgrid_api_key == "dummy"):
-        logger.warning("Missing API keys for Anthropic or SendGrid. Aborting outreach.")
+    if not dry_run and (gemini_api_key == "dummy" or sendgrid_api_key == "dummy"):
+        logger.warning("Missing API keys for Gemini or SendGrid. Aborting outreach.")
         return
 
-    composer = EmailComposer(anthropic_api_key)
+    composer = EmailComposer(gemini_api_key)
     sender = EmailSender(sendgrid_api_key, from_email)
 
     try:
